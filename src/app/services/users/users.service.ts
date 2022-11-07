@@ -1,4 +1,4 @@
-import { UtilsService } from './../utils/utils.service';
+import { UtilsService } from './../utils-service/utils.service';
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 
@@ -9,7 +9,7 @@ export class UsersService {
 
   constructor(private http: HttpClient, private utils: UtilsService) { }
 
-  getClients() {
+  getUsers() {
     const url = 'https://jsonplaceholder.typicode.com/users';
 
     return this.http.get(url);

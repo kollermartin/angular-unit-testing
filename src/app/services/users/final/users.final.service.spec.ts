@@ -76,7 +76,7 @@ describe('UsersService', () => {
       .spyOn(httpServiceMock, 'get')
       .mockReturnValue(of(users));
 
-    service.getClients().subscribe((result) => {
+    service.getUsers().subscribe((result) => {
       expect(result).toEqual(users);
     });
 
