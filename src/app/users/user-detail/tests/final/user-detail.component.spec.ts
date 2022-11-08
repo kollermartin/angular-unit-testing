@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserDetailComponent } from '../user-detail.component';
+import { UserDetailComponent } from '../../user-detail.component';
 
 describe('UserDetailComponent', () => {
   let component: UserDetailComponent;
@@ -8,9 +8,8 @@ describe('UserDetailComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserDetailComponent ]
-    })
-    .compileComponents();
+      declarations: [UserDetailComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(UserDetailComponent);
     component = fixture.componentInstance;
@@ -21,7 +20,7 @@ describe('UserDetailComponent', () => {
   });
 
   it('Should return name from given data', () => {
-    component.data = {name: 'Pepa', surname: 'Kokos'}
+    component.data = { name: 'Pepa', surname: 'Kokos' };
 
     const result = component.returnNameFromGivenData();
 
@@ -29,11 +28,10 @@ describe('UserDetailComponent', () => {
   });
 
   it('Should initialize fullname', () => {
-    component.data = {name: 'Pepa', surname: 'Kokos'};
+    component.data = { name: 'Pepa', surname: 'Kokos' };
 
     fixture.detectChanges();
 
     expect(component.fullname).toBe('Pepa Kokos');
-
   });
 });

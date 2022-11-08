@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
-import { Customer } from '../customer.model';
+import { Customer } from '../../customer.model';
 
-import { UtilsService } from '../utils.service';
+import { UtilsService } from '../../utils.service';
 
 describe('UtilsService', () => {
   let service: UtilsService;
@@ -52,14 +52,14 @@ describe('UtilsService', () => {
   it('Should check that objects are same', () => {
     const customer1: Customer = {
       name: 'Jolanda',
-      favourite: false
+      favourite: false,
     };
 
     const customer2: Customer = {
       name: 'Jolanda',
-      favourite: false
-    }
+      favourite: false,
+    };
 
     expect(customer1).toEqual(customer2);
-  })
+  });
 });

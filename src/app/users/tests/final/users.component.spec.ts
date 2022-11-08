@@ -1,7 +1,7 @@
-import { UsersService } from './../../../services/users/users.service';
+import { UsersService } from '../../../services/users/users.service';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UsersComponent } from '../users.component';
+import { UsersComponent } from '../../users.component';
 import { of } from 'rxjs';
 
 describe('UsersComponent', () => {

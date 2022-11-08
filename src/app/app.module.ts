@@ -4,8 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { UppercasePipe } from './pipes/uppercase.pipe';
-import { UsersComponent } from './component/users/users.component';
-import { UserDetailComponent } from './component/users/user-detail/user-detail.component';
+import { UsersComponent } from './users/users.component';
+import { UserDetailComponent } from './users/user-detail/user-detail.component';
 
 @NgModule({
   declarations: [

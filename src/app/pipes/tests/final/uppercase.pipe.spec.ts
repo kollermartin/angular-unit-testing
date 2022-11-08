@@ -1,4 +1,4 @@
-import { UppercasePipe } from '../uppercase.pipe';
+import { UppercasePipe } from '../../uppercase.pipe';
 
 describe('UppercasePipe', () => {
   const pipe = new UppercasePipe();
