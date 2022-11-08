@@ -6,9 +6,21 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./user-detail.component.scss'],
 })
 export class UserDetailComponent implements OnInit {
-  @Input() data: any;
+  @Input() data!: { name: string; surname: string; }
 
-  constructor() {}
+  fullname!: string;
 
-  ngOnInit(): void {}
+  constructor() { }
+
+  ngOnInit(): void {
+    this.initFullName();
+   }
+
+  returnNameFromGivenData() {
+    return this.data.name;
+  }
+
+  initFullName() {
+    this.fullname = Object.values(this.data).join(' ');
+  }
 }
